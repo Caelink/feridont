@@ -1,0 +1,1 @@
+var feri = document.getElementById('feridun')

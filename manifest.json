@@ -1,0 +1,13 @@
+{
+    "name": "FeriDont",
+    "version": "1.0",
+    "description": "Laughter is the best medicine",
+    "permissions": ["tabs", "http://*/*"],
+    "content_scripts" : [{
+        "matches" : [ "*"],
+        "js" : ["feriDoIt.js"]
+    }],
+    "web_accessible_resources" : [
+    	"start-laughter.js"
+    ]
+}
