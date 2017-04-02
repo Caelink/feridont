@@ -1,13 +1,16 @@
 {
-    "name": "FeriDont",
-    "version": "1.0",
-    "description": "Laughter is the best medicine",
-    "permissions": ["tabs", "http://*/*"],
-    "content_scripts" : [{
-        "matches" : [ "*"],
-        "js" : ["feriDoIt.js"]
-    }],
-    "web_accessible_resources" : [
-    	"start-laughter.js"
-    ]
+	"manifest_version": 2,
+
+  	"name": "FeriDont",
+	"description": "Laughter is the best medicine",
+	"version": "1.0",
+
+	"browser_action": {
+ 		"default_icon": "smolgoose.png",
+ 		"default_popup": "feridun.html"
+	},
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/"
+  ]
 }
